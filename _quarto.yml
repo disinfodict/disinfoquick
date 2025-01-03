@@ -1,0 +1,118 @@
+project:
+  type: book
+
+book:
+  title: "Disinformation Dictionary"
+  subtitle: "A dictionary of Myths and Truths"
+  #description: "This dictionary consolidates and debunks chronic disinformation narratives detected by several fact-checking organisations."
+  author: "Fellas & Partners"
+  date: "last-modified"
+  site-url: http://127.0.0.1:4322
+  favicon: /all_common_img/DisinfoDict_logo_1x1_trans_small.png
+  # note that Cloudflare's Static resource protection does not protext epub. downloads: [pdf,epub]
+  downloads: [pdf,epub]
+  twitter-card: true
+  sidebar: 
+    style: "floating"
+    collapse-level: 1
+  page-footer:
+    background: "grey"
+    center:
+      - text: "![Home](/all_common_img/DisinfoDict_logo_1x1_trans.png){width=1in}"
+        href: http://127.0.0.1:4322
+        #href: https://disinfodict.pages.dev
+      - text: "Impressum"
+        href: impressum.qmd
+
+
+  chapters:
+  - index.qmd
+  - part: "Intro" 
+    part-de: "Intro" 
+    #part-ua: "Вступ"
+    chapters:
+    - intro/preface.qmd
+    - intro/principles.qmd
+    - intro/termstech.qmd
+    - intro/ukrlessons.qmd
+    - intro/vatniks.qmd
+    - intro/narratives.qmd
+    - intro/trueukraine.qmd
+  - part: "Example Part"
+    part-de: "Beispiel Teil"
+    #part-ua: "Приклад частини"
+    chapters:
+    - example_part/my_chapter.qmd
+  appendices:  
+    - appendix/about.qmd
+    - appendix/recommendations.qmd
+    - appendix/references.qmd
+
+bibliography: 
+  - intro/termstech.bib
+  - intro/ukrlessons.bib
+  - example_part/my_chapter.bib
+  - appendix/recommendations.bib
+
+callout-appearance: simple
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    toc-expand: 1
+    email-obfuscation: javascript
+    link-external-icon: false
+    link-external-newwindow: false
+    license: CC BY-NC-ND
+  pdf:
+    pdf-engine: xelatex
+    cite-method: biblatex
+    documentclass: scrbook
+    toc: true
+    number-sections: true
+    colorlinks: true
+    mainfont: "Segoe UI"
+    include-in-header:
+      text: |
+        \usepackage{alphalph}
+        \renewcommand*{\thepart}{%
+          \AlphAlph{\value{part}}%
+        }
+        \usepackage{makeidx}
+        \makeindex
+        \newcommand{\LatexTableFontSize}{\fontsize{6}{9}\selectfont}
+        \newcommand{\LatexReturnFontSize}{\fontsize{12}{14}\selectfont}
+#        \renewcommand\thepart{\Alph{part}}
+#better in references.qmd
+#    include-after-body:
+#      text: |
+#        \printindex
+  epub:
+    accessibilitySummary: "This publication conforms to WCAG 2.0 Level AA."
+    toc: true
+    toc-depth: 3
+    number-sections: true
+
+babelquarto:
+  languagecodes:
+  - name: de
+    text: "🇩🇪 Deutsch"
+  #- name: ua
+  #  text: "🇺🇦 Український"
+  - name: en
+    text: "🇺🇸 English"
+  mainlanguage: 'en'
+  languages: ['de']
+title-de: Desinformations-Wörterbuch
+#title-ua: Словник-дезінформації
+subtitle-de: Ein Wörterbuch der Mythen und Wahrheiten
+#subtitle-ua: Словник міфів і правд
+#description-de: Dieses Wörterbuch konsolidiert und entkräftet chronische Desinformations-Narrative, die von verschiedenen Fact-Checking-Organisationen festgestellt wurden.
+#description-ua: Цей словник об'єднує та розвінчує хронічні дезінформаційні наративи, виявлені кількома фактчекінговими організаціями
+author-de: NAFO & Partner
+#author-ua: НАФО & Партнер
+lang: en

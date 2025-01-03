@@ -1,0 +1,43 @@
+# My Chapter2 {#sec-my-chapter}
+
+<!-- This is a comment -->
+
+\index{MyFirstKeyword}
+\index{MyFirstKeyword!FirstSubtopic}
+\index{MyFirstKeyword!SecondSubtopic}
+\index{MySecondKeyword}
+\index{MySecondKeyword!FirstSubtopic}
+\index{MySecondKeyword!SecondSubtopic}
+
+::: {.callout-caution title="Myth"}
+Disinfo narrative here (and replace the seach text in the follolwing link to euvsdisinfo)
+[![Explain the link in this ALT Text](../all_common_img/EUvsDisinfo_faviconV2.png){height=1em}](https://euvsdisinfo.eu/disinformation-cases/?text=MyFirstKeyword+MySecondKeyword&disinfo_language[]=English&sort=relevance)
+:::
+
+::: {.callout-tip title="Truth"}
+Truth narrative here (this is the one we explain and prove in the following text)
+:::
+
+## Storyline Subtitle One
+
+My text here. This is a [my linktext](https://URL) to a source. This is *emphasized*, This is __bold__. This is __*both*__.  
+
+> This is a citation
+> continued over multiple lines
+
+This @Hawking:1988 is a literature reference prepared in the .bib bibtex file belonging to this chapter. 
+
+
+## Storyline Subtitle Two
+
+<!-- {{< lipsum 1-2 >}} is just a placeholder for dummy text -->
+{{< lipsum 1-2 >}}
+
+## Storyline Subtitle Three
+
+{{< lipsum 3-4 >}}
+
+## Storyline Subtitle Four
+
+{{< lipsum 5-6 >}}
+
