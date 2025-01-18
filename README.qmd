@@ -1,9 +1,11 @@
 ---
-title: "Desinformation Dictionary"
+title: "Disinformation Dictionary"
 format: html
 execute: 
   enabled: false
 ---
+
+# Conribute
 
 You can contribute to the Desinformation Dictionary in multiple ways
 
@@ -12,6 +14,9 @@ You can contribute to the Desinformation Dictionary in multiple ways
 - git: use version control on your PC
 - github: clone the Dictionary repository in your github account, modify and submit
 - recommended: combine RStudio with git and github
+
+To submit you contribution use the email address in the [dictionary](https://disinfodict.pages.dev/intro/principles#contribute), for many submissions learn how to use pull requests, see below [Dictionary flow].
+
 
 # Low tech approach
 
@@ -28,6 +33,7 @@ There you see the success of your work and can detect and correct mistakes. To d
 - install R from [CRAN](https://cran.r-project.org/)
 - install RStudio from [posit](https://posit.co/download/rstudio-desktop/)
 - install TinyTex from the terminal in RStudio
+- install the Segoe UI fonts (or change `mainfont: "Segoe UI"` to a font you have or comment that line out)
 
 ```{}
 quarto install TinyTex
@@ -65,7 +71,7 @@ Full rendering takes a moment, but you should render once to check your current 
 ### Full rendering
 
 ```{R}
-babelquarto::render_book(site_url = "http://127.0.0.1:4321")
+babelquarto::render_book(site_url = "http://127.0.0.1:4322")
 ```
 
 This should create a `_book` folder with html, pdf and epub in all available languages (default english and a subfolder `de` for German). 
@@ -75,7 +81,7 @@ This should create a `_book` folder with html, pdf and epub in all available lan
 For proper browsing (including search) you need a running http-server. The following is not fast but serves the purpose:
 
 ```{R}
-ret <- servr::httw("_book", host="127.0.0.1", port="4321")
+ret <- servr::httw("_book", host="127.0.0.1", port="4322")
 ```
 
 Now you should see the Dictionary in the viewer pane of RStudio. By clicking on the <show in new window>-button you can see it in you default browser (Chrome, Firefox, Edge).
@@ -100,20 +106,20 @@ This will monitor the English chapters for saved changes, update and show the re
 ### preview english folder
 
 ```{R}
-quarto::quarto_preview("example_part")
+quarto::quarto_preview("examplepart")
 ```
 
-This will monitor the English chapters in folder `example_part` for saved changes, update and show the result.
+This will monitor the English chapters in folder `examplepart` for saved changes, update and show the result.
 
 ### preview single file
 
 This is like checking *Render on Save* in RStudio.
 
 ```{R}
-quarto::quarto_preview("example_part/my_chapter.de.qmd")
+quarto::quarto_preview("examplepart/mychapter.de.qmd")
 ```
 
-It will monitor the file  `example_part/my_chapter` for saved changes, update and show the result.
+It will monitor the file  `examplepart/mychapter` for saved changes, update and show the result.
 
 ### stop the preview server
 ```{R}
@@ -230,4 +236,271 @@ sudo apt install npm
 sudo apt install nodejs
 npm install @daisy/ace -g
 -->
-  
+
+
+# Expert use only
+
+## Measuring dictionary status
+
+```{R}
+en <-  setdiff(dir(pattern="[.]qmd$", recursive=T), "README.qmd")
+en <- en[grep("/", en)] 
+de <- en[grep("[.]de[.]qmd$", en)]
+en <- setdiff(en, de)
+names(en) <- sub("[.]qmd", "", en)
+names(de) <- sub("[.]qmd", "", de)
+ enstatus <- sapply(en, function(i){
+  x <- paste(readLines(i), collapse=" ")
+  y <- strsplit(x, "##")[[1]]
+  lipsum <- grep("lipsum|TODO", y, ignore.case = TRUE)
+  n <- length(y)
+  k <- n - length(lipsum)
+  p <- k/n
+  p
+})
+destatus <- sapply(de, function(i){
+  x <- paste(readLines(i), collapse=" ")
+  y <- strsplit(x, "##")[[1]]
+  lipsum <- grep("\\{\\{< lipsum", y)
+  n <- length(y)
+  k <- n - length(lipsum)
+  p <- k/n
+  p
+})
+d <- cbind(en=100*enstatus, ".de"=rep(0, length(enstatus)))
+d[,2] <- 0
+rownames(d) <- names(enstatus)
+d[sub("\\.de","",names(destatus)),2] <- 100*destatus
+round(d)
+save(d, file = "status.RData")
+```
+
+## Mesasuring dictionary size
+
+```{R}
+en <-  setdiff(dir(pattern="[.]qmd$", recursive=T), "README.qmd")
+en <- en[-grep("[.][a-z][a-z][.]", en)]
+de <- dir(pattern="[.]de[.]qmd$", recursive=T)
+
+names(en) <- en
+names(de) <- de
+
+enwords <- sapply(en, function(i){
+ x <- readLines(i)
+ lipsum <- length(unlist(grep("\\{\\{< lipsum", x))) > 0
+ y <- sum(lengths(strsplit(x, ' ')))
+ ifelse(lipsum, NA, y)
+})
+dewords <- sapply(de, function(i){
+ x <- readLines(i)
+ lipsum <- length(unlist(grep("\\{\\{< lipsum", x))) > 0
+ y <- sum(lengths(strsplit(x, ' ')))
+ ifelse(lipsum, NA, y)
+})
+
+enlinks <- sapply(en, function(i){
+ x <- readLines(i)
+ lipsum <- length(unlist(grep("\\{\\{< lipsum", x))) > 0
+ names(x) <- seq_along(x)
+ y <- sum(sapply(gregexpr("(\\(|\\{)((http://|https://)[[:alpha:]0-9.:/#?=_&\\\\-]+)", x), function(l){
+   if (l[1]==-1) {
+     0
+   }else{
+     length(l)
+   }
+ }))
+ ifelse(lipsum, NA, y)
+})
+length(en)
+length(de)
+length(en)*mean(enwords, na.rm=TRUE)
+length(en)*mean(dewords, na.rm=TRUE)
+summary(enwords)
+summary(dewords)
+length(en)*mean(enlinks, na.rm=TRUE)
+summary(enlinks)
+```
+
+
+
+## Footnote reorganisation
+
+```{R}
+for (i in grep("/", dir(pattern="[.]qmd", recursive=T), value=TRUE)){
+ cat(i)
+ x <- readLines(i)
+ names(x) <- seq_along(x)
+ y <- gregexpr("\\[\\^[0-9a-zA-Z-]+\\]", x)
+ y <- lapply(seq_along(y), function(j){
+   a <- y[[j]]
+   if (a[1]==-1)
+     NULL
+   else
+     cbind(row=j, start=as.vector(a), stop=as.vector(a)+attr(a, "match.length")-1L)
+ })
+ names(y) <- seq_along(x)
+ z <- do.call("rbind", y)
+ if (!is.null(z)){
+     n <- sapply(y, function(a){if (is.null(a)) 0 else nrow(a)})
+     oldid <- substr(x[z[,"row"]], z[,"start"], z[,"stop"])
+     toldid <- sapply(split(oldid, oldid), length)
+     #if (any(toldid!=2)){
+     #  print(toldid[toldid!=2])
+     #}
+     tnewid <- toldid
+     tnewid[] <- paste0("[^",gsub("/","-",substr(i, 1, nchar(i)-4)),"-",seq_along(toldid),"]")
+     newid <- tnewid[oldid]
+     for (j in rev(seq_along(newid))){
+       k <- z[j,"row"]
+       s <- x[k]
+       s1 <- if (z[j,"start"]>1) substr(s, 1, z[j,"start"]-1L)
+       s2 <- if (z[j,"stop"]<nchar(s)) substr(s, z[j,"stop"]+1L, nchar(s))
+       s3 <- paste0(s1, newid[j], s2)
+       x[k] <- s3
+     }
+     writeLines(x, i)
+     cat(" done\n") 
+   }
+}
+```
+
+### Checking formatted links
+
+
+```{R}
+require(curl)
+hand <- new_handle()
+handle_setheaders(hand
+, "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" 
+, "Accept" = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8" 
+, "Accept-Language" = "de,en-US;q=0.7,en;q=0.3" 
+, "Accept-Encoding" = "gzip, deflate, br, zstd" 
+, "DNT" = "1" 
+, "Sec-GPC" = "1" 
+, "Connection" = "keep-alive" 
+, "Upgrade-Insecure-Requests" = "1" 
+, "Sec-Fetch-Dest" = "document" 
+, "Sec-Fetch-Mode" = "navigate" 
+, "Sec-Fetch-Site" = "none" 
+, "Sec-Fetch-User" = "?1" 
+, "Priority" = "u=0, i"
+)
+fi <- file("log.txt", open="w")
+for (i in grep("/", dir(pattern="[.](bib|qmd)", recursive=T), value=TRUE)){
+ cat("\n", i, "\n", file=fi)
+ x <- readLines(i)
+ names(x) <- seq_along(x)
+ y <- gregexpr("(\\(|\\{)((http://|https://)[[:alpha:]0-9.:/#?=_&\\\\-]+)", x, perl=TRUE)
+ y <- lapply(seq_along(y), function(j){
+   a <- y[[j]]
+   if (a[1]==-1)
+     NULL
+   else
+     cbind(row=j, start=attr(a, "capture.start")[,2], stop=attr(a, "capture.start")[,2]+attr(a, "capture.length")[,2]-1L)
+ })
+ names(y) <- seq_along(x)
+ z <- do.call("rbind", y)
+ if (!is.null(z)){
+     n <- sapply(y, function(a){if (is.null(a)) 0 else nrow(a)})
+     oldid <- substr(x[z[,"row"]], z[,"start"], z[,"stop"])
+     for (j in rev(seq_along(oldid))){
+       k <- z[j,"row"]
+       s <- x[k]
+       h <- oldid[j]
+       u <- url(h)
+       Sys.sleep(runif(1, 1, 2))
+       o <- curl_fetch_memory("https://www.nato.int/cps/en/natohq/opinions_224174.htm/head", handle = hand)$status_code
+       if (o != 200){
+         cat("\nrow=", z[j,"row"], "  start=", z[j,"start"], "  stop=", z[j,"stop"], "BROKEN ", o, " ", h, "\n", file=fi)
+       }else{
+       close(u)
+       cat("\nrow=", z[j,"row"], "  start=", z[j,"start"], "  stop=", z[j,"stop"], "  OK   ", o, " ",  h, "\n", file=fi)
+       }
+     }
+   }
+} 
+close(fi)
+#gsub("(^|[^[\\[\\(\\`)]]?)((http://|https://)[[:alpha:]0-9./#?=_&\\\\-]+)", "\\1[\\2](\\2)", x)
+```
+
+
+### Checking and formatting unformatted links
+
+
+```{R}
+require(curl)
+hand <- new_handle()
+handle_setheaders(hand
+, "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0" 
+, "Accept" = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8" 
+, "Accept-Language" = "de,en-US;q=0.7,en;q=0.3" 
+, "Accept-Encoding" = "gzip, deflate, br, zstd" 
+, "DNT" = "1" 
+, "Sec-GPC" = "1" 
+, "Connection" = "keep-alive" 
+, "Upgrade-Insecure-Requests" = "1" 
+, "Sec-Fetch-Dest" = "document" 
+, "Sec-Fetch-Mode" = "navigate" 
+, "Sec-Fetch-Site" = "none" 
+, "Sec-Fetch-User" = "?1" 
+, "Priority" = "u=0, i"
+)
+#require(httr)
+# headers = c(
+#   `User-Agent` = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0',
+#   `Accept` = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8',
+#   `Accept-Language` = 'de,en-US;q=0.7,en;q=0.3',
+#   `Accept-Encoding` = 'gzip, deflate, br, zstd',
+#   `DNT` = '1',
+#   `Sec-GPC` = '1',
+#   `Connection` = 'keep-alive',
+#   `Upgrade-Insecure-Requests` = '1',
+#   `Sec-Fetch-Dest` = 'document',
+#   `Sec-Fetch-Mode` = 'navigate',
+#   `Sec-Fetch-Site` = 'none',
+#   `Sec-Fetch-User` = '?1',
+#   `Priority` = 'u=0, i'
+# )
+# httr::HEAD(url = 'https://www.nato.int/cps/en/natohq/opinions_224174.htm', httr::add_headers(.headers=headers)), times=1)$status_code
+fi <- file("log.txt", open="w")
+for (i in grep("/", dir(pattern="[.]qmd", recursive=T), value=TRUE)){
+ cat("\n", i, "\n", file=fi)
+ x <- readLines(i)
+ names(x) <- seq_along(x)
+ y <- gregexpr("(^|[^[\\[\\(\\`)]]?)((http://|https://)[[:alpha:]0-9.:/#?=_&\\\\-]+)", x, perl=TRUE)
+ y <- lapply(seq_along(y), function(j){
+   a <- y[[j]]
+   if (a[1]==-1)
+     NULL
+   else
+     cbind(row=j, start=attr(a, "capture.start")[,2], stop=attr(a, "capture.start")[,2]+attr(a, "capture.length")[,2]-1L)
+ })
+ names(y) <- seq_along(x)
+ z <- do.call("rbind", y)
+ if (!is.null(z)){
+     n <- sapply(y, function(a){if (is.null(a)) 0 else nrow(a)})
+     oldid <- substr(x[z[,"row"]], z[,"start"], z[,"stop"])
+     for (j in rev(seq_along(oldid))){
+       k <- z[j,"row"]
+       s <- x[k]
+       h <- oldid[j]
+       u <- url(h)
+       Sys.sleep(runif(1, 1, 2))
+       o <- curl_fetch_memory("https://www.nato.int/cps/en/natohq/opinions_224174.htm/head", handle = hand)$status_code
+       if (o != 200){
+         cat("\nrow=", z[j,"row"], "  start=", z[j,"start"], "  stop=", z[j,"stop"], "BROKEN ", o, " ", h, "\n", file=fi)
+       }else{
+       close(u)
+       cat("\nrow=", z[j,"row"], "  start=", z[j,"start"], "  stop=", z[j,"stop"], "  OK   ", o, " ",  h, "\n", file=fi)
+         s1 <- if (z[j,"start"]>1) substr(s, 1, z[j,"start"]-1L)
+         s2 <- if (z[j,"stop"]<nchar(s)) substr(s, z[j,"stop"]+1L, nchar(s))
+         s3 <- paste0(s1, "[", h, "](", h, ")", s2)
+         x[k] <- s3
+       }
+     }
+     #writeLines(x, i)
+   }
+} 
+close(fi)
+#gsub("(^|[^[\\[\\(\\`)]]?)((http://|https://)[[:alpha:]0-9./#?=_&\\\\-]+)", "\\1[\\2](\\2)", x)
+```

@@ -38,11 +38,12 @@ book:
     - intro/vatniks.qmd
     - intro/narratives.qmd
     - intro/trueukraine.qmd
+    - intro/status.qmd
   - part: "Example Part"
     part-de: "Beispiel Teil"
     #part-ua: "Приклад частини"
     chapters:
-    - example_part/my_chapter.qmd
+    - examplepart/mychapter.qmd
   appendices:  
     - appendix/about.qmd
     - appendix/recommendations.qmd
@@ -51,7 +52,7 @@ book:
 bibliography: 
   - intro/termstech.bib
   - intro/ukrlessons.bib
-  - example_part/my_chapter.bib
+  - examplepart/mychapter.bib
   - appendix/recommendations.bib
 
 callout-appearance: simple

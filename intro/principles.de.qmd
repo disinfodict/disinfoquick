@@ -38,8 +38,8 @@ Das Desinfo-Wörterbuch richtet sich an Menschen
 
 - wir konzentrieren uns auf die Wahrheit, nicht auf Lügen (je öfter die Menschen Lügen konsumieren, desto mehr glauben sie ihnen)
 - wir verpflichten uns dem [IFCN-Prinzipienkodex](https://ifcncodeofprinciples.poynter.org/the-commitments)
-- jeder, der sich zu diesen Werten und Grundsätzen bekennt, kann einen Beitrag leisten (siehe *Beiträge* unten)
-- bitte lassen Sie uns wissen, wenn etwas falsch erscheint (siehe *Beiträge* unten)
+- jeder, der sich zu diesen Werten und Grundsätzen bekennt, kann einen Beitrag leisten (siehe [Beitragen] unten)
+- bitte lassen Sie uns wissen, wenn etwas falsch erscheint (siehe [Beitragen] unten)
 
 
 ## IFCN-Grundsatzkodex
@@ -73,7 +73,7 @@ Wir versuchen, das Wörterbuch wie ein Buch lesbar zu halten. Das bedeutet, dass
 Das Wörterbuch ist thematisch in Teile unterteilt. Die Teile sind separate Ordner auf Github und die Namen der Teile werden in der Navigation auf der obersten Ebene des Wörterbuchs (links) angezeigt.
 
 - Ordnernamen können nicht umbenannt werden (sie sind Teil der permanenten Referenzen)
-- Die Navigationsnamen der Teile können in `_quarto.yml` umbenannt werden
+- Die Navigationsnamen der Teile können in der Datei `_quarto.yml` umbenannt werden
 - und die Reihenfolge der Kapitel in der Navigation kann in `_quarto.yml` geändert werden
 
 ### Kapitel
@@ -114,11 +114,7 @@ Die Kapitel sind in *Faktenabschnitte* gegliedert:
 - wir bevorzugen quadratische Bilder, und ziehen 3:4 bzw. 4:3 gegenüber 9:16 und 16:9 vor
 
 
-## Beiträge
+## Beitragen
 
-Sie benötigen ein [GitHub](https://github.com/signup?ref_cta=Sign+up) Konto, um Beiträge zu leisten.
+Sie können Verbesserungsvorschläge im Klartext senden - vorzugsweise als [quarto markdown](https://quarto.org/docs/authoring/markdown-basics.html) *.qmd Datei - [contribute [at] disinfodict [dot] org](mailto:contribute@disinfodict.org). Die Syntax für die Definition von Abschnittsüberschriften, Fußnoten und die Integration von Bildern ist einfach, siehe zum Beispiel [Teil Brüder | Kapitel Russland](https://github.com/disinfodict/disinfodict/blob/main/brothers/russia.de.qmd). Es gibt auch ein [Mini- Demo-Wörterbuch](https://github.com/disinfodict/disinfoquick) zum Lernen. Eine Übersicht, welche Kapitel noch bearbeitet werden müssen, finden Sie unter [Status](#sec-intro-status). Für mehrfache Beiträge können Sie das [dictionary at github](https:/github.com/disinfodict/disinfodict) forken und einen Pull-Request erstellen (siehe die [README]((https:/github.com/disinfodict/disinfodict/README.qmd)).
 
-- Erstelle ein Issue auf GitHub und erkläre deine Verbesserung (mit verlässlichen Quellen)
-- Erstelle ein Issue auf GitHub und poste einen neuen Abschnitt mit [markdown code](https://quarto.org/docs/authoring/markdown-basics.html)
-- eine Issue auf GitHub stellen und ein neues Kapitel anhängen (`<Dateiname>.qmd`, und optional eine `<Dateiname>.bib` mit Referenzdaten)
-- regelmäßige Mitwirkende sollten in Erwägung ziehen zu lernen, wie man [pull-requests] einreicht (https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models)
