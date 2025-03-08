@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Disinformation Dictionary"
+  title: "Disinfo Dictionary"
   subtitle: "A dictionary of Myths and Truths"
   #description: "This dictionary consolidates and debunks chronic disinformation narratives detected by several fact-checking organisations."
   author: "Fellas & Partners"
@@ -15,15 +15,18 @@ book:
   sidebar: 
     style: "floating"
     collapse-level: 1
+    title: "read. share. join."
+    logo: all_common_img/DisinfoDict_logo_1x1_trans.png
+    css: logo.css
+  body-header: | 
+    ::: {.callout-important title="BREAKING" appearance="default" collapse="false"}
+    These are breaking NEWS
+    :::
   page-footer:
     background: "grey"
     center:
-      - text: "![Home](/all_common_img/DisinfoDict_logo_1x1_trans.png){width=1in}"
-        href: http://127.0.0.1:4322
-        #href: https://disinfodict.pages.dev
       - text: "Impressum"
         href: impressum.qmd
-
 
   chapters:
   - index.qmd
@@ -108,11 +111,11 @@ babelquarto:
     text: "🇺🇸 English"
   mainlanguage: 'en'
   languages: ['de']
-title-de: Desinformations-Wörterbuch
+title-de: Desinfo-Lexikon
 #title-ua: Словник-дезінформації
-subtitle-de: Ein Wörterbuch der Mythen und Wahrheiten
+subtitle-de: Ein Lexikon der Mythen und Wahrheiten
 #subtitle-ua: Словник міфів і правд
-#description-de: Dieses Wörterbuch konsolidiert und entkräftet chronische Desinformations-Narrative, die von verschiedenen Fact-Checking-Organisationen festgestellt wurden.
+#description-de: Dieses Lexikon konsolidiert und entkräftet chronische Desinformations-Narrative, die von verschiedenen Fact-Checking-Organisationen festgestellt wurden.
 #description-ua: Цей словник об'єднує та розвінчує хронічні дезінформаційні наративи, виявлені кількома фактчекінговими організаціями
 author-de: NAFO & Partner
 #author-ua: НАФО & Партнер

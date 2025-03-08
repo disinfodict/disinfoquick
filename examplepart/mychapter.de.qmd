@@ -11,11 +11,12 @@
 
 ::: {.callout-caution title=„Mythos“}
 Disinfo-Erzählung hier (und ersetzen Sie den Suchtext im folgenden Link zu euvsdisinfo)
-[![Erkläre den Link in diesem ALT-Text](../all_common_img/EUvsDisinfo_faviconV2.png){height=1em}](https://euvsdisinfo.eu/disinformation-cases/?text=MyFirstKeyword+MySecondKeyword&disinfo_language[]=Englisch&sort=relevant)
+[<br></br>![Erkläre den Link in diesem ALT-Text](../all_common_img/EUvsDisinfo_faviconV2.png){height=1em}](https://euvsdisinfo.eu/disinformation-cases/?text=MyFirstKeyword+MySecondKeyword&disinfo_language[]=Englisch&sort=relevant)
 :::
 
 ::: {.callout-tip title=„Wahrheit“}
 Wahrheitserzählung hier (dies ist diejenige, die wir im folgenden Text erklären und beweisen)
+[<br></br>![Link to Wikipedia](../all_common_img/Wikipedia.png){height=1em}](https://en.wikipedia.org/wiki/Mariupol_theatre_airstrike)
 :::
 
 ## Storyline Untertitel Eins
@@ -30,15 +31,15 @@ Dies @Hawking:1988 ist eine Literaturangabe, die in der zu diesem Kapitel gehör
 
 ## Storyline Untertitel Zwei
 
-<!-- {{< lipsum 1-2 >}} ist nur ein Platzhalter für Blindtext -->
+<!-- {{< lipsum 2 >}} ist nur ein Platzhalter für Blindtext -->
 
-{{< lipsum 1-2 >}}
+{{< var todo >}}
 
 ## Storyline Untertitel Drei
 
-{{< lipsum 3-4 >}}
+{{< var todo >}}
 
 ## Storyline Untertitel Vier
 
-{{< lipsum 5-6 >}}
+{{< var todo >}}
 

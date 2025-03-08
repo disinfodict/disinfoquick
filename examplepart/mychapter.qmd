@@ -10,13 +10,15 @@
 \index{MySecondKeyword!SecondSubtopic}
 
 ::: {.callout-caution title="Myth"}
-Disinfo narrative here (and replace the seach text in the follolwing link to euvsdisinfo)
-[![Explain the link in this ALT Text](../all_common_img/EUvsDisinfo_faviconV2.png){height=1em}](https://euvsdisinfo.eu/disinformation-cases/?text=MyFirstKeyword+MySecondKeyword&disinfo_language[]=English&sort=relevance)
+Disinfo narrative here (and replace the seach text in the following link to euvsdisinfo)
+[<br></br>![Explain the link in this ALT Text](../all_common_img/EUvsDisinfo_400x240.jpg){height=2em}](https://euvsdisinfo.eu/disinformation-cases/?text=MyFirstKeyword+MySecondKeyword&disinfo_language[]=English&sort=relevance)
 :::
 
 ::: {.callout-tip title="Truth"}
 Truth narrative here (this is the one we explain and prove in the following text)
+[<br></br>![Wikipedia](../all_common_img/Wikipedia.png){height=1em}](https://en.wikipedia.org/wiki/Mariupol_theatre_airstrike)
 :::
+
 
 ## Storyline Subtitle One
 
@@ -30,14 +32,23 @@ This @Hawking:1988 is a literature reference prepared in the .bib bibtex file be
 
 ## Storyline Subtitle Two
 
-<!-- {{< lipsum 1-2 >}} is just a placeholder for dummy text -->
-{{< lipsum 1-2 >}}
+<!-- {{< lipsum 2 >}} is just a placeholder for dummy text -->
+{{< var todo >}}
 
 ## Storyline Subtitle Three
 
-{{< lipsum 3-4 >}}
+{{< var todo >}}
 
 ## Storyline Subtitle Four
 
-{{< lipsum 5-6 >}}
+{{< var todo >}}
+
+
+
+
+
+
+
+
+{{ reserved }}
 
