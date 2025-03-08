@@ -17,7 +17,6 @@ book:
     collapse-level: 1
     title: "read. share. join."
     logo: all_common_img/DisinfoDict_logo_1x1_trans.png
-    css: logo.css
   body-header: | 
     ::: {.callout-important title="BREAKING" appearance="default" collapse="false"}
     These are breaking NEWS
