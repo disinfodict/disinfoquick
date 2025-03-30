@@ -1,10 +1,10 @@
-# Team & Partners {.unnumbered}
+# Team & Partners {.unnumbered #sec-appendix-about}
 
 ## Core team
 
 ### Nord Atlantic Fella Organiztion (NAFO)
 
-Maker and User of the dictionary: [NAFO](https://nafo-ofan.org/en-de) is a grassroots movement that fights disinformation and supports freedom and democracy worldwide with a focus on Ukraine.
+Maker and User of the dictionary: [NAFO](https://nafo-ofan.org/pages/we-are-nafo) is a grassroots movement that fights disinformation and supports freedom and democracy worldwide with a focus on Ukraine.
 
 ### fellas4europe
 
@@ -41,10 +41,9 @@ Maintainer of a database and provider of a newsletter on desinformation: [EUvsDi
 
 We commit to the [IFCN code of Principles](https://ifcncodeofprinciples.poynter.org/the-commitments) but have not applied for signatory status yet: the [International Fact-Checking Network (IFCN) at Poynter](https://www.poynter.org/ifcn/) is committed to promoting excellence in fact-checking. IFCN believes nonpartisan and transparent fact-checking can be a powerful instrument of accountability journalism. Conversely, unsourced or biased fact-checking can increase distrust in the media and experts while polluting public understanding.
 
-
 ### German-Ukrainian Association 
 
-Invited as content curator: the *German-Ukrainian Association - for our and your freedom*, which is currently being founded, is not yet operational and has not yet decided to take a content-curating role.
+The *German-Ukrainian Association - for our and your freedom*, is involved in curating the content.
 
 
 ## Start-up partners
@@ -55,16 +54,20 @@ Project development: [Akademie für politische Bildung](https://www.apb-tutzing.
 
 ### TechCamp
 
-Project development and start-up financing: [TechCamp](https://techcamp.america.gov/) TechCamp is a public diplomacy program hosted in the Bureau of Educational & Cultural Affairs (ECA) at the U.S. Department of State.
+Project development and start-up financing: [TechCamp](https://techcamp.america.gov/) TechCamp is a public diplomacy program hosted in the Bureau of Educational & Cultural Affairs (ECA) at the U.S. Department of State. TechCamp was closed on January 15, 2025. Funding for the Disinfo dictionary was discontinued by DOGE on February 27.
 
 
 ## Technical partners
+
+### Deepl
+
+The multilingual Disinformation Dictionary strongly benefits from the translation services of [Deepl](https://www.deepl.com). After Russia's invasion in February 2022, Deepl quickly responded to customer wishes to integrate the Ukrainian language into its language portfolio. We thank Deepl and recommend it as *the* best translation engine we are aware of.
 
 ### GitHub
 
 Source code hosting: [GitHub](https://github.com) is the home of most open-source projects today. It provides version-controlled storage of code together with processes for collaborative coding.
 
-### Netlify
+### Cloudflare
 
-Website hosting: [Netlify](https://www.netlify.com) Core provides developers with the platform and workflow to immediately focus on building websites and apps without dedicating time and resources on labor-intensive operations. Content deployed to the edge nodes is fully prerendered and static, offering no active processes or surface area for attack.
+Website hosting: the [Cloudflare](https://www.cloudflare.com) global network is one of the fastest on the planet and can reach about 95% of the world’s population within approximately 50 ms. Cloudflare is known for its network security and superior protection against DDOS-attacks.
 

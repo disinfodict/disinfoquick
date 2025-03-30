@@ -1,10 +1,10 @@
-# Werte & Prinzipien {.unnumbered}
+# Werte & Prinzipien {.unnumbered #sec-intro-principles}
 
-::: {.callout-caution title=„Mythos“}
+::: {.callout-caution title="Mythos"}
 Es gibt keinen Platz für *Werte & Prinzipien*, wir müssen *realistisch* sein.
 :::
 
-::: {.callout-tip title=„Wahrheit“}
+::: {.callout-tip title="Wahrheit"}
 *Werte & Prinzipien* sind die Grundlage für die Zivilisation, und sie *gestalten unsere Realität*.
 :::
 
@@ -22,7 +22,7 @@ Wir wollen eine vertrauenswürdige, nützliche Referenz für die Korrektur von N
 ## Unsere Werte
 
 - wir fördern Ehrlichkeit und Demokratie
-- wir halten das Lexikon korrekt und prägnant
+- wir halten das Lexikon knapp und korrekt
 - wir halten das Lexikon einfach und nachhaltig
 
 ## Unsere Zielgruppe
@@ -37,9 +37,11 @@ Das Desinfo-Lexikon richtet sich an Menschen
 ## Unsere Grundsätze
 
 - wir konzentrieren uns auf die Wahrheit, nicht auf Lügen (je öfter die Menschen Lügen konsumieren, desto mehr glauben sie ihnen)
-- wir verpflichten uns dem [IFCN-Prinzipienkodex](https://ifcncodeofprinciples.poynter.org/the-commitments)
+- wir verpflichten uns dem [IFCN-Prinzipienkodex](https://ifcncodeofprinciples.poynter.org/the-commitments) (siehe unten)
+- wir schreiben unsere Texte selber oder verwenden [CC](https://de.creativecommons.net) Quellen; unter Copyright stehende Texte zitieren wir im Rahem von Fair Use nur in kurzen Ausschnitten und mit Quellenangabe.
 - jeder, der sich zu diesen Werten und Grundsätzen bekennt, kann einen Beitrag leisten (siehe [Beitragen] unten)
-- bitte lassen Sie uns wissen, wenn etwas falsch erscheint (siehe [Beitragen] unten)
+- wenn Sie einen Fehler finden benachrichtigen sie uns bitte mit Korrekturvorschlag und Quelle auf [correction [at] disinfodict [dot] org](mailto:correction@disinfodict.org)
+- wenn Sie glauben wir verletzen Ihr copyright benachrichtigen sie uns bitte mit Nachweis auf [copyright [at] disinfodict [dot] org](mailto:copyright@disinfodict.org)
 
 
 ## IFCN-Grundsatzkodex
@@ -54,12 +56,12 @@ Das Desinfo-Lexikon richtet sich an Menschen
 ## Grundlegende Prinzipien
 
 - wir schreiben das Lexikon in einfacher [Markdown-Sprache](https://quarto.org/docs/authoring/markdown-basics.html)
-- wir halten die Quellversion des Lexikons unter Versionskontrolle auf [github](https://github.com)
+- wir halten die Quellversion des Lexikons unter Versionskontrolle auf [github](https://github.com/disinfodict/disinfodict)
 - wir veröffentlichen das Lexikon unter der [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) Lizenz: 
-- CC: *C*reative *C*ommons Lizenz - garantiert, dass der Inhalt in der Public Domain erhalten bleibt
-- BY: der Urheber muss genannt werden - Transparenz und Wertschätzung
-- NC: nur *N*on*C*kommerzielle Nutzung des Werks ist erlaubt - wir wollen nicht, dass Menschen für etwas bezahlen, das frei verfügbar ist
-- ND: *N*keine *D*Ableitungen oder Bearbeitungen des Werkes sind erlaubt - verhindert Manipulationen an der heiligen Wahrheit des Inhalts 
+  - **CC**: **C**reative **C**ommons Lizenz - garantiert, dass der Inhalt in der Public Domain erhalten bleibt
+  - **BY**: der Urheber muss genannt werden - Transparenz und Wertschätzung
+  - **NC**: nur **N**on-**C**ommerzielle Nutzung des Werks ist erlaubt - wir wollen nicht, dass Menschen für etwas bezahlen, das frei verfügbar ist
+  - **ND**: **N**on-**D**erivative (keine Ableitungen oder Bearbeitungen des Werkes sind erlaubt) - verhindert Manipulationen an der heiligen Wahrheit des Inhalts 
 
 
 ## Autorenprinzipien
@@ -102,13 +104,45 @@ Die Kapitel sind in *Faktenabschnitte* gegliedert:
 - die Reihenfolge der Faktenabschnitte kann geändert werden
 - Abschnittsüberschriften können, sollten aber nicht geändert werden (unterbricht Links zu `<Partfoldername>/<Kapiteldateiname>#<Abschnittstitel>`)
 
+### Übersetzungen
+
+- ein Kapitel kann zuerst in Englisch oder Deutsch geschrieben werden
+- wir bemühen uns, alle Kapitel in alle unterstützten Sprachen zu übersetzen (siehe den Globus 🌐 Sprachwähler in der oberen linken Ecke)
+- wir verwenden niemals maschinelle Übersetzungen ohne Überprüfung und Korrektur und wir verwenden den hochwertigen Übersetzer von [deepl](https://deepl.com)
+- wir übersetzen nur in Sprachen, die wir gut sprechen, und wenn wir keine Muttersprachler sind, nutzen wir [deepl](https://deepl.com) Rückübersetzungen zur Kontrolle der Bedeutung
+- ohne Übersetzungen fällt unsere Technologie auf Englisch zurück
+
+
+## Styleguide
+
+### Pyramiden-Prinzip
+
+Wir schreiben nicht auf eine Pointe hin, sondern beginnen mit der Kernaussage oder den Kernaussagen und detaillieren das anschließend aus. Viele Leute lesen nicht zuende, also muss das Wichtigste zuerst kommen. Z.B. in @sec-culture-russia:
+
+::: {.callout-tip title="Wahrheit"}
+- Russland tötet die Kultur in seinen Kolonien und eignet sich die Kultur seiner überfallenen Nachbarn an.
+- Russlands wahre Kultur besteht aus Korruption und Lügen, Gewalt und Angst. 
+:::
+
+Auf der nächsten Ebene bilden dann die Abschnittsüberschriften eine Argumentationslinie (oder schlicht Aufzählung) der Argumente, die dann in den Abschnitten weiter erläutert und belegt werden.
+
+
+### Keine Ausgewogenheit
+
+Wir wollen russische Lügen mit Wahrheiten kontern. Wir wollen nicht ausgewogen sein. False-Balance gibt es genug. Nehmen wir zum Beispiel den Teil Kultur. Wikipedia würde einfach die wichtigsten Beispiele russischer und ukrainischer Kultur auflisten. Wir sind nicht Wikipedia. Wir haben zwei Kapitel, eines über die angeblich "Große" russiche Kultur und eines über die angeblich minderwertige oder nicht vorhandene Ukrainische Kultur. Diese russichen Lügen kontern wir, einerseits, durch wunderbare Beispiele Ukrainischer Kultur (und dieses Kapitel dürfte ziemlich lang) werden. Andererseits, dekonstruieren wir die Mär von der "Großen Russischen Kultur", indem wir aufzeigen, dass die russische Kultur ein Scheinriese ist, weil 
+
+- Russland die Kultur der Ukraine (und in anderen Kolonien) ermordet
+- Russland sich die Kultur der Ukraine (und von anderen Kolonien) aneignet
+- ein angebliches Highlight der russischen Kultur, der russische"Nationaldichter" Puschkin in Wirklichkeit ein russischer Imperialdichter war, der zum Teil mit faschistischen Bildern operiert hat, und von den freiheitsliebenden Ukrainischen Nationaldichtern nicht verschiedener sein könnte.
+
+
 
 ## Grundsätze der Nachhaltigkeit
 
 - wir bevorzugen Zitate aus nachhaltigen Quellen wie Büchern und Zeitschriften
 - wir verwenden Links, von denen wir erwarten, dass sie lange funktionieren (tote Links schaden der Sichtbarkeit in den Suchmaschinen)
 - wir bevorzugen Tabellen gegenüber Bildern
-- wir bevorzugen datenbasierte Diagramme oder anderen ausgeführten R-Code nur, wenn es unbedingt notwendig ist
+- wir verwenden datenbasierte Diagramme oder anderen ausgeführten R-Code nur, wenn es unbedingt notwendig ist
 - wir verwenden Bilder nur, wenn es unbedingt notwendig ist (Bilder verursachen Netzwerkverkehr, verbrauchen Energie und stoßen CO2 aus)
 - wir minimieren die Bildgröße (svg oder png oder jpg, ≤ 1280 x 1280 Pixel und vernünftig komprimiert)
 - wir bevorzugen quadratische Bilder, und ziehen 3:4 bzw. 4:3 gegenüber 9:16 und 16:9 vor
@@ -116,5 +150,8 @@ Die Kapitel sind in *Faktenabschnitte* gegliedert:
 
 ## Beitragen {#sec-intro-principles-contribute}
 
-Sie können Verbesserungsvorschläge im Klartext senden - vorzugsweise als [quarto markdown](https://quarto.org/docs/authoring/markdown-basics.html) *.qmd Datei - [contribute [at] disinfodict [dot] org](mailto:contribute@disinfodict.org). Die Syntax für die Definition von Abschnittsüberschriften, Fußnoten und die Integration von Bildern ist einfach, siehe zum Beispiel [Teil Brüder | Kapitel Russland, die Datei russia.de.qmd](https://github.com/disinfodict/disinfodict/blob/main/brothers). Es gibt auch ein [Mini- Demo-Lexikon](https://github.com/disinfodict/disinfoquick) zum Lernen. Eine Übersicht, welche Kapitel noch bearbeitet werden müssen, finden Sie unter [Status](#sec-intro-status). Für mehrfache Beiträge können Sie das [dictionary at github](https://github.com/disinfodict/disinfodict) forken und einen Pull-Request erstellen (siehe die [README](https://github.com/disinfodict/disinfodict).
+Sie können Verbesserungsvorschläge im Klartext senden, Binärdateien akzeptieren wir aus Sicherheitsgründen nicht. Bitte nutzen sie das [quarto markdown](https://quarto.org/docs/authoring/markdown-basics.html) .qmd Dateiformat und senden es an [contribute [at] disinfodict [dot] org](mailto:contribute@disinfodict.org).  Die Syntax für die Definition von Abschnittsüberschriften, Fußnoten und die Integration von Bildern ist einfach, siehe zum Beispiel den *Teil Brüder | Kapitel Russland* [im Lexikon](#sec-brothers-russia) und [auf github](https://github.com/disinfodict/disinfodict/blob/main/brothers/russia.de.qmd). Es gibt auch ein [Mini- Demo-Lexikon](https://github.com/disinfodict/disinfoquick) zum Lernen.  
 
+Eine Übersicht, welche Kapitel noch bearbeitet werden müssen, finden Sie unter  [Status](#sec-status-status). Wenn Sie Inhalte einreichen, akzeptieren Sie die [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) Lizenz. Um doppelte Arbeit zu vermeiden, treten Sie unserer Signalgruppe bei und geben Sie an, an welchem Kapitel Sie arbeiten. Um der Gruppe beizutreten, senden Sie Ihr Signal-Handle (oder Ihre Mobil-Nummer) an [contribute [at] disinfodict [dot] org](mailto:contribute@disinfodict.org). Der Beitritt zu dieser Gruppe ist nur auf Einladung möglich.  
+
+Für mehrfache Beiträge können Sie das [dictionary at github](https://github.com/disinfodict/disinfodict) forken und einen Pull-Request erstellen (siehe die [README](https://github.com/disinfodict/disinfodict/README.qmd).

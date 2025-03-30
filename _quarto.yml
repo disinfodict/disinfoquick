@@ -1,5 +1,8 @@
 project:
   type: book
+  preview:
+    port: 4201
+    browser: false
 
 book:
   title: "Disinfo Dictionary"
@@ -7,20 +10,25 @@ book:
   #description: "This dictionary consolidates and debunks chronic disinformation narratives detected by several fact-checking organisations."
   author: "Fellas & Partners"
   date: "last-modified"
-  site-url: http://127.0.0.1:4322
+  #site-url: http://127.0.0.1:4322
+  #site-url: https://disinfodict.pages.dev
+  site-url: https://disinfodict.org
   favicon: /all_common_img/DisinfoDict_logo_1x1_trans_small.png
-  # note that Cloudflare's Static resource protection does not protext epub. downloads: [pdf,epub]
   downloads: [pdf,epub]
-  twitter-card: true
+  open-graph: true
+  #https://www.opengraph.xyz/
+  twitter-card:
+    creator: "disinfodict"
+    site: "disinfodict"
   sidebar: 
     style: "floating"
     collapse-level: 1
-    title: "read. share. join."
     logo: all_common_img/DisinfoDict_logo_1x1_trans.png
-  body-header: | 
-    ::: {.callout-important title="BREAKING" appearance="default" collapse="false"}
-    These are breaking NEWS
-    :::
+    title: "read. share. join."
+  #body-header: | 
+  #  ::: {.callout-important title="BREAKING" appearance="default" collapse="false"}
+  #  These are breaking NEWS
+  #  :::
   page-footer:
     background: "grey"
     center:
@@ -36,11 +44,10 @@ book:
     - intro/preface.qmd
     - intro/principles.qmd
     - intro/termstech.qmd
-    - intro/ukrlessons.qmd
+    - intro/ualessons.qmd
+    - intro/trueukraine.qmd
     - intro/vatniks.qmd
     - intro/narratives.qmd
-    - intro/trueukraine.qmd
-    - intro/status.qmd
   - part: "Example Part"
     part-de: "Beispiel Teil"
     #part-ua: "Приклад частини"
@@ -51,13 +58,13 @@ book:
     - appendix/recommendations.qmd
     - appendix/references.qmd
 
+callout-appearance: simple
 bibliography: 
+  - intro/preface.bib
   - intro/termstech.bib
-  - intro/ukrlessons.bib
+  - intro/ualessons.bib
   - examplepart/mychapter.bib
   - appendix/recommendations.bib
-
-callout-appearance: simple
 
 format:
   html:
@@ -72,8 +79,9 @@ format:
     link-external-newwindow: false
     license: CC BY-NC-ND
   pdf:
+    latex-auto-mk: true
+    latex-tinytex: false
     pdf-engine: xelatex
-    cite-method: biblatex
     documentclass: scrbook
     toc: true
     number-sections: true
@@ -119,3 +127,4 @@ subtitle-de: Ein Lexikon der Mythen und Wahrheiten
 author-de: NAFO & Partner
 #author-ua: НАФО & Партнер
 lang: en
+

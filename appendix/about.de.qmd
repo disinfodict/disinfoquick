@@ -1,14 +1,14 @@
-# Team & Partner {.unnumbered}
+# Team & Partner {.unnumbered #sec-appendix-about}
 
 ## Kernteam
 
 ### Nord Atlantic Fella Organization (NAFO)
 
-Macher und Nutzer des Lexikons: [NAFO](https://nafo-ofan.org/en-de) ist eine Basisbewegung, die Desinformation bekämpft und Freiheit und Demokratie weltweit unterstützt, mit einem Schwerpunkt auf der Ukraine.
+Macher und Nutzer des Lexikons: [NAFO](https://nafo-ofan.org/pages/we-are-nafo) ist eine Graswurzelbewegung, die Desinformation bekämpft und Freiheit und Demokratie weltweit unterstützt, mit einem Schwerpunkt auf der Ukraine.
 
 ### fellas4europe
 
-Rechtliche und finanzielle Heimat des Lexikons: [fellas4europe](https://fellas4europe.org/) ist eine deutsche Nichtregierungsorganisation, die Freiheit und Demokratie in Europa mit einem Schwerpunkt auf der Ukraine durch humanitäre Hilfe und politisches Bewusstsein unterstützt.
+Rechtliche und finanzielle Heimat des Lexikons: [fellas4europe](https://fellas4europe.org/) ist ein deutscher gemeinnütziger Verein, der Freiheit und Demokratie in Europa mit einem Schwerpunkt auf der Ukraine durch humanitäre Hilfe und politisches Bewusstsein unterstützt.
 
 
 ### Ziviles Netzwerk OPORA
@@ -24,7 +24,7 @@ Als Sicherheitsvorkehrung erlauben wir dem unabhängigen USCC in transparenter W
 
 ### Transatlantisches Dialogzentrum (TDC)
  
-Ursprünglicher Beitrag zum Inhalt: Das [Transatlantic Dialogue Center (TDC)] (https://tdcenter.org/) ist eine nichtstaatliche und überparteiliche Ideenschmiede, die privaten und öffentlichen Auftraggebern hochwertige politische Beratung bietet. TDC veröffentlichte *"Ukraine Clarity Debunking Myths and Misinformation in Germany “* in Deutsch @tdc:2024a und Englisch @tdc:2024b.
+Ursprünglicher Beitrag zum Inhalt: Das [Transatlantic Dialogue Center (TDC)](https://tdcenter.org/) ist eine nichtstaatliche und überparteiliche Ideenschmiede, die privaten und öffentlichen Auftraggebern hochwertige politische Beratung bietet. TDC veröffentlichte *"Ukraine Clarity Debunking Myths and Misinformation in Germany “* in Deutsch @tdc:2024a und Englisch @tdc:2024b.
  
 ### VoxCheck
 
@@ -32,20 +32,20 @@ Ursprünglicher Beitrag zum Inhalt (über TDC): [VoxCheck](https://voxcheck.voxu
 
 ### StopFake
 
-Betreuer einer Liste russischer Narrative: Die Nichtregierungsorganisation Media Reforms Center ist eine Bildungsplattform, die von der Mohyla School of Journalism an der Nationalen Universität „KyivMohyla Academy“ gegründet wurde. Ihr Vorzeigeprojekt [StopFake] (https://www.stopfake.org/de/) identifiziert Fälle von gefälschten Informationen über Ereignisse in der Ukraine und betreibt Forschung über Narrative und darüber, wie man sich dem schändlichen Phänomen der Desinformation widersetzen kann.
+Betreuer einer Liste russischer Narrative: Die Nichtregierungsorganisation Media Reforms Center ist eine Bildungsplattform, die von der Mohyla School of Journalism an der Nationalen Universität „KyivMohyla Academy“ gegründet wurde. Ihr Vorzeigeprojekt [StopFake](https://www.stopfake.org/de/) identifiziert Fälle von gefälschten Informationen über Ereignisse in der Ukraine und betreibt Forschung über Narrative und darüber, wie man sich dem schändlichen Phänomen der Desinformation widersetzen kann.
 
 ### EUvsDisinfo
 
-Betreiber einer Datenbank und eines Newsletters über Desinformation: [EUvsDisinfo] (https://euvsdisinfo.eu/de/about-de/) ist das Vorzeigeprojekt der EU, um die laufenden Desinformationskampagnen der Russischen Föderation, die sich gegen die Europäische Union, ihre Mitgliedstaaten und Länder in der gemeinsamen Nachbarschaft richten, besser vorherzusagen, anzugehen und darauf zu reagieren. Das Hauptziel von EUvsDisinfo besteht darin, die Öffentlichkeit für die Desinformationskampagnen des Kremls zu sensibilisieren und ihr Verständnis dafür zu verbessern sowie den Bürgern in Europa und darüber hinaus zu helfen, Widerstand gegen digitale Informationen und Medienmanipulation zu entwickeln.
+Betreiber einer Datenbank und eines Newsletters über Desinformation: [EUvsDisinfo](https://euvsdisinfo.eu/de/about-de/) ist das Vorzeigeprojekt der EU, um die laufenden Desinformationskampagnen der Russischen Föderation, die sich gegen die Europäische Union, ihre Mitgliedstaaten und Länder in der gemeinsamen Nachbarschaft richten, besser vorherzusagen, anzugehen und darauf zu reagieren. Das Hauptziel von EUvsDisinfo besteht darin, die Öffentlichkeit für die Desinformationskampagnen des Kremls zu sensibilisieren und ihr Verständnis dafür zu verbessern sowie den Bürgern in Europa und darüber hinaus zu helfen, Widerstand gegen digitale Informationen und Medienmanipulation zu entwickeln.
 
 ### Internationales Netzwerk zur Faktenüberprüfung (IFCN)
 
 Wir bekennen uns zum [IFCN-Prinzipienkodex](https://ifcncodeofprinciples.poynter.org/the-commitments), haben aber noch keinen Unterzeichnerstatus beantragt: Das [International Fact-Checking Network (IFCN) at Poynter](https://www.poynter.org/ifcn/) hat sich der Förderung von Spitzenleistungen bei der Faktenüberprüfung verschrieben. Das IFCN ist der Ansicht, dass unparteiische und transparente Faktenüberprüfung ein wirksames Instrument des verantwortungsvollen Journalismus sein kann. Umgekehrt kann eine nicht fundierte oder voreingenommene Faktenüberprüfung das Misstrauen gegenüber den Medien und Experten erhöhen und das öffentliche Verständnis beeinträchtigen.
 
-
 ### Deutsch-Ukrainische Gesellschaft 
 
-Eingeladen als Content-Kurator: Die *Deutsch-Ukrainische Gesellschaft - für unsere und eure Freiheit*, die sich derzeit in Gründung befindet, ist noch nicht operativ und hat noch nicht beschlossen, eine Content-Kuratorenrolle zu übernehmen.
+Die *Deutsch-Ukrainische Gesellschaft - für unsere und Eure Freiheit* ist an der Kuratierung der Inhalte beteiligt.
+
 
 ## Start-up-Partner
 
@@ -55,16 +55,20 @@ Projektentwicklung: Die [Akademie für politische Bildung](https://www.apb-tutzi
 
 ### TechCamp
 
-Projektentwicklung und Anschubfinanzierung: [TechCamp](https://techcamp.america.gov/) TechCamp ist ein Public Diplomacy Programm, das im Bureau of Educational & Cultural Affairs (ECA) des U.S. Department of State angesiedelt ist.
+Projektentwicklung und Anschubfinanzierung: [TechCamp](https://techcamp.america.gov/) TechCamp ist ein Public Diplomacy Programm, das im Bureau of Educational & Cultural Affairs (ECA) des U.S. Department of State angesiedelt ist. TechCamp wurde am 15. Januar 2025 geschlossen. Die Förderung des Disinfo-Wörterbuchs wurde am 27. Februar von der DOGE eingestellt.
 
 
 ## Technische Partner
 
+### Deepl
+
+Das mehrsprachige Desinfo-Lexikon profitiert stark von den Übersetzungsdiensten von [Deepl](https://www.deepl.com). Nach dem Einmarsch Russlands im Februar 2022 reagierte Deepl schnell auf Kundenwünsche, die ukrainische Sprache in sein Sprachenportfolio zu integrieren. Wir danken Deepl und empfehlen es als *die* beste Übersetzungsmaschine, die wir kennen.
+
 ### GitHub
 
-Quellcode-Hosting: [GitHub] (https://github.com) ist heute die Heimat der meisten Open-Source-Projekte. Es bietet eine versionskontrollierte Speicherung von Code sowie Prozesse für die gemeinsame Programmierung.
+Quellcode-Hosting: [GitHub](https://github.com) ist heute die Heimat der meisten Open-Source-Projekte. Es bietet eine versionskontrollierte Speicherung von Code sowie Prozesse für die gemeinsame Programmierung.
 
 ### Cloudflare
 
-Website-Hosting: [Cloudflare](https://www.cloudflare.com/de-de/) bietet Hosting und DDOS-Schutz. Die auf den Edge-Knoten bereitgestellten Inhalte sind vollständig vorgerendert und statisch und bieten keine aktiven Prozesse oder Angriffsfläche.
+Website-Hosting: Das globale Netzwerk von [Cloudflare](https://www.cloudflare.com) ist eines der schnellsten der Welt und kann etwa 95 % der Weltbevölkerung innerhalb von etwa 50 ms erreichen. Cloudflare ist bekannt für seine Netzwerksicherheit und seinen hervorragenden Schutz vor DDOS-Angriffen.
 

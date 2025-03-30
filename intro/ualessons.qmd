@@ -1,4 +1,4 @@
-# Lessons from Ukraine {.unnumbered}
+# Lessons from Ukraine {.unnumbered #sec-intro-ualessons}
 
 ::: {.callout-caution title="Myth"}
 There is nothing the EU can learn from Ukraine
@@ -52,3 +52,4 @@ Despite some optimistic takes by Western commentators, no one in Ukraine would c
 ## 10. The West needs to catch up with Ukraine
 
 When it comes to Western partners, Ukrainians would like to see them doing what Ukraine has been doing during the last decade: taking Russian disinformation seriously and actively resisting it. Concerns persist among Ukrainians regarding the success of Russian disinformation abroad. As a nation under attack, they also propose an “Information Ramstein” to provide support not just in the form of weapons but also in the information space. Ultimately, Ukrainian civil society remains reliant on support from the West.
+

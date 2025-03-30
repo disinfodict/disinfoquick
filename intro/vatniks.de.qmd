@@ -1,4 +1,4 @@
-# Agenten & Vatniks {.unnumbered}
+# Agenten & Vatniks {.unnumbered #sec-intro-vatniks}
 
 [Vatnik](https://de.wikipedia.org/wiki/Watnik) ist ein politisches Pejorativum, das in Russland und anderen postsowjetischen Staaten für unerschütterliche, chauvinistische Anhänger der Propaganda der russischen Regierung verwendet wird.  Im weiteren Sinne wird das Wort 'Vatnik' auch für Einflussagenten verwendet, die die russische Propaganda verbreiten.
 
@@ -46,6 +46,8 @@ Bei dieser aktualisierten Version 2.0 handelt es sich um eine Datenbank mit 2109
 
 [![TEXTY_Germs1.0_screenshot](TEXTY_Germs2.0.jpg)
 The Germs of “Russian World” Version 2.0 ](https://texty.org.ua/d/2023/germs_v2/en/)
+
+
 
 > TEXTY stellt das Projekt [The Atlas of Russian Lobby in Europe](https://texty.org.ua/d/2023/germs_v2/lobby/en/) vor, das einen Einblick in die Vertreter verschiedener Kreise bietet, die auf die eine oder andere Weise die Förderung russischer Geschäftsinteressen in der EU erleichtert haben oder erleichtern - von Regierungsbeamten bis zu PR-Experten und Anwälten, von „russischen Freundschaftsgruppen“ bis zu informellen Netzwerkforen. Trotz der Tatsache, dass viele dieser Initiativen auf Eis gelegt wurden, werden diese Personen und Einrichtungen nach dem Ende des Krieges oder sobald es zu einer vorübergehenden Deeskalation kommt, wahrscheinlich zu den lautstärksten Befürwortern einer Wiederherstellung der früheren Wirtschaftsbeziehungen zu Russland gehören. 
 
