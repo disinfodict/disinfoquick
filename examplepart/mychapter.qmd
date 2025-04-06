@@ -1,13 +1,22 @@
+---
+abstract: > 
+  This optional 120 - 160 character abstract is shown and goes to twitter and open-graph
+keywords: 
+  - MyFirstOptionalKeywordForHTML
+  - MySecondOptionalKeywordForHTML
+---
+
 # My Chapter2 {#sec-my-chapter}
 
 <!-- This is a comment -->
 
-\index{MyFirstKeyword}
-\index{MyFirstKeyword!FirstSubtopic}
-\index{MyFirstKeyword!SecondSubtopic}
-\index{MySecondKeyword}
-\index{MySecondKeyword!FirstSubtopic}
-\index{MySecondKeyword!SecondSubtopic}
+\index{MyFirstOptionalKeywordForPDF}
+\index{MyFirstOptionalKeywordForPDF!FirstSubtopic}
+\index{MyFirstOptionalKeywordForPDF!SecondSubtopic}
+\index{MySecondOptionalKeywordForPDF}
+\index{MySecondOptionalKeywordForPDF!FirstSubtopic}
+\index{MySecondOptionalKeywordForPDF!SecondSubtopic}
+
 
 ::: {.callout-caution title="Myth"}
 Disinfo narrative here (and replace the seach text in the following link to euvsdisinfo)

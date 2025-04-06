@@ -1,13 +1,21 @@
+---
+abstract: > 
+  Diese optionale Zusammenfassung (120 - 160 Zeichen) wird auf Twitter und Open-Graph gezeigt
+keywords: 
+  - MeinErstesOptionalesSchlüsselwortFürHTML
+  - MeinZweitesOptionalesSchlüsselwortFürHTML
+---
+
 # Mein Kapitel {#sec-my-chapter}
 
 <!-- Dies ist ein Kommentar, oben und unten bleiben Leerzeilen -->
 
-\index{MeinErstesSchlüsselwort}
-\index{MeinErstesSchlüsselwort!ErstesUnterthema}
-\index{MeinErstesSchlüsselwort!ZweitesUnterthema}
-\index{MeinZweitesSchlüsselwort}
-\index{MeinZweitesSchlüsselwort!ErstesUnterthema}
-\index{MeinZweitesSchlüsselwort!ZweitesUnterthema}
+\index{MeinErstesOptionalesSchlüsselwortFürPDF}
+\index{MeinErstesOptionalesSchlüsselwortFürPDF!ErstesUnterthema}
+\index{MeinErstesOptionalesSchlüsselwortFürPDF!ZweitesUnterthema}
+\index{MeinZweitesOptionalesSchlüsselwortFürPDF}
+\index{MeinZweitesOptionalesSchlüsselwortFürPDF!ErstesUnterthema}
+\index{MeinZweitesOptionalesSchlüsselwortFürPDF!ZweitesUnterthema}
 
 ::: {.callout-caution title=„Mythos“}
 Disinfo-Erzählung hier (und ersetzen Sie den Suchtext im folgenden Link zu euvsdisinfo)

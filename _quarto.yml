@@ -10,25 +10,27 @@ book:
   #description: "This dictionary consolidates and debunks chronic disinformation narratives detected by several fact-checking organisations."
   author: "Fellas & Partners"
   date: "last-modified"
-  #site-url: http://127.0.0.1:4322
+  site-url: http://127.0.0.1:4322
   #site-url: https://disinfodict.pages.dev
-  site-url: https://disinfodict.org
+  #site-url: https://disinfodict.org
   favicon: /all_common_img/DisinfoDict_logo_1x1_trans_small.png
   downloads: [pdf,epub]
-  open-graph: true
   #https://www.opengraph.xyz/
+  open-graph: 
+    image: /all_common_img/DisinfoDict_opengraph_1200x627.png
   twitter-card:
     creator: "disinfodict"
     site: "disinfodict"
+    image: /all_common_img/DisinfoDict_twittercard_800x418.png
   sidebar: 
     style: "floating"
     collapse-level: 1
     logo: all_common_img/DisinfoDict_logo_1x1_trans.png
-    title: "read. share. join."
-  #body-header: | 
-  #  ::: {.callout-important title="BREAKING" appearance="default" collapse="false"}
-  #  These are breaking NEWS
-  #  :::
+    title: "search. read. share."
+#  body-header: | 
+# ::: {.callout-important title="BREAKING" appearance="default" collapse="false"}
+# These are breaking NEWS
+# :::
   page-footer:
     background: "grey"
     center:
@@ -62,6 +64,7 @@ callout-appearance: simple
 bibliography: 
   - intro/preface.bib
   - intro/termstech.bib
+  - intro/trueukraine.bib
   - intro/ualessons.bib
   - examplepart/mychapter.bib
   - appendix/recommendations.bib
@@ -78,6 +81,8 @@ format:
     link-external-icon: false
     link-external-newwindow: false
     license: CC BY-NC-ND
+    include-in-header: 
+      - file: in_header.html
   pdf:
     latex-auto-mk: true
     latex-tinytex: false
@@ -124,7 +129,7 @@ subtitle-de: Ein Lexikon der Mythen und Wahrheiten
 #subtitle-ua: Словник міфів і правд
 #description-de: Dieses Lexikon konsolidiert und entkräftet chronische Desinformations-Narrative, die von verschiedenen Fact-Checking-Organisationen festgestellt wurden.
 #description-ua: Цей словник об'єднує та розвінчує хронічні дезінформаційні наративи, виявлені кількома фактчекінговими організаціями
-author-de: NAFO & Partner
+author-de: Fellas & Partner
 #author-ua: НАФО & Партнер
 lang: en
 
